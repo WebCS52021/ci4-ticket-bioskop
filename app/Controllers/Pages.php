@@ -32,4 +32,12 @@ class Pages extends BaseController
 
         return view('pages/catalog', $data);
     }
+    public function recomend()
+    {
+        $data = [
+            'title'=> 'Recomend',
+        ];
+
+        return view('pages/recomend', $data);
+    }
 }
