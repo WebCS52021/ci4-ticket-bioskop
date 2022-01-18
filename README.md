@@ -1,63 +1,89 @@
-# CodeIgniter 4 Application Starter
+# Tubes web
 
-## What is CodeIgniter?
+1. Cloning github
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+```jsx
+git clone https://github.com/WebCS52021/ci4-ticket-bioskop.git
+```
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+1. masuk ke directory
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+```jsx
+cd ci4-ticket-bioskop
+```
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+1. buka vscode di direktori
 
-## Installation & updates
+```jsx
+code .
+```
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+1. masuk ke brach terupdate(dev)
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+```jsx
+git checkout dev
+```
 
-## Setup
+1. install package node(tailwindcss)
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+```jsx
+npm i
+```
 
-## Important Change with index.php
+1. pastikan punya composer dan php >7.4
+2. install package php(ci4)
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+```jsx
+composer install
+```
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+1. liat hasilnya
 
-**Please** read the user guide for a better explanation of how CI4 works!
+```jsx
+php spark serve
+```
 
-## Repository Management
+## Database Modelling
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+1. pindah ke branch setup-model
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+```jsx
+git checkout feat/setup-model
+```
 
-## Server Requirements
+1. buat database di lokal
+    1. masuk ke database
+    
+    ```jsx
+    mysql -u root -p
+    ```
+    
+    b. buat database baru
+    
+    ```jsx
+    create database coba_ci4;
+    ```
+    
+    c. cek apakah databasenya udah ada
+    
+    ```jsx
+    show databases;
+    ```
+    
+2. Migrate database
 
-PHP version 7.3 or higher is required, with the following extensions installed:
+```jsx
+php spark migrate
+```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+1. isi database
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+```jsx
+php spark db:seed
+```
 
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+1. liat hasilnya
+
+```jsx
+php spark serve
+```
