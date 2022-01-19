@@ -12,6 +12,10 @@ font-size: xx-large;
 text-align: center;
 }
 
+.sidebarjudulrecomended{
+  font-size: x-large
+}
+
 .red_recomend{
 color: red;
 }
@@ -24,14 +28,16 @@ color: white;
 }
 
 .sidenav_recomend {
-  width: 140px;
+  width: 215px;
   position: fixed;
   z-index: 1;
-  top: 200px;
-  left: 10px;
+  top: 130px;
+  left: 0px;
+  bottom: 25px;
   background: rgb(139 92 246 / var(--tw-bg-opacity));
   overflow-x: hidden;
   padding: 8px 0;
+  overflow-y: auto;
 }
 
 .sidenav_recomend a {
@@ -47,7 +53,7 @@ color: white;
 }
 
 .main_recomend {
-  margin-left: 140px;
+  margin-left: 160px;
   font-size: 28px;
   padding: 0px 10px;
 }
