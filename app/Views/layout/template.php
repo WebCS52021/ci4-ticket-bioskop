@@ -20,11 +20,6 @@
 
 	<?= $this->renderSection('content'); ?>
 
-	<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
-
-	<?= $this->include('layout/footer') ;?>
-
-
 </body>
 
 </html>
