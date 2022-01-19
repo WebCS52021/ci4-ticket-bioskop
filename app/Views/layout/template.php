@@ -24,7 +24,7 @@
 
 	<?= $this->include('layout/footer') ;?>
 
-	<script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
+
 </body>
 
 </html>
