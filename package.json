@@ -1,0 +1,28 @@
+{
+  "name": "ticket-bioskop",
+  "version": "1.0.0",
+  "description": "## What is CodeIgniter?",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.1",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.11"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/app.css -o ./public/css/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebCS52021/ci4-ticket-bioskop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebCS52021/ci4-ticket-bioskop/issues"
+  },
+  "homepage": "https://github.com/WebCS52021/ci4-ticket-bioskop#readme"
+}
