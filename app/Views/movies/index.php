@@ -28,4 +28,7 @@
     <?php endforeach ?>
 </div>
 
+
+<?= $this->include('layout/footer') ;?>
+
 <?= $this->endSection(); ?>

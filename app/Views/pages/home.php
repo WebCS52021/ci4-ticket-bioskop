@@ -62,4 +62,6 @@
         setTimeout(showSlides, 5000); // Change image every 2 seconds
     }
 </script>
+
+<?= $this->include('layout/footer') ;?>
 <?= $this->endSection(); ?>
