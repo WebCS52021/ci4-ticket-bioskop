@@ -1,11 +1,12 @@
 <header>
     <nav class="bg-violet-500 text-white">
         <ul class="flex justify-between items-center px-5 py-2">
-            <li><a href="#">Logo</a></li>
+            <li class="items-center">
+                <p class="inline-block text-xl">🍿 </p>
+                <p class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-red-200 to-yellow-300 text-xl font-bold" href="#">iTicket</p>
+            </li>
             <ul class="flex justify-between">
                 <a class="px-5 py-2 hover:bg-violet-400 rounded-lg" href="/">Home</a>
-                <a class="px-5 py-2 hover:bg-violet-400 rounded-lg" href="/pages/catalog">Catalog</a>
-                <a class="px-5 py-2 hover:bg-violet-400 rounded-lg" href="/pages/about">About</a>
                 <a class="px-5 py-2 hover:bg-violet-400 rounded-lg" href="/movies/index">Movies</a>
             </ul>
             <?php if(session()->get('logged_in')):?>
