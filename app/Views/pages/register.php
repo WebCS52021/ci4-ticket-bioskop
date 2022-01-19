@@ -1,9 +1,9 @@
 <?= $this->extend('layout/template') ;?>
 
 <?= $this->section('content') ;?>
-<div class="w-full max-w-xs mx-auto mb-5">
-    <div class="md:flex md:items-center mb-6">
-        <h1>Register</h1>
+<div class="flex flex-row h-full items-center m-28">
+    <div class="max-w-md w-1/3 mx-auto">
+        <h1 class="text-2xl font-bold font-sans py-5">Register</h1>
         <?php if(isset($validation)):?>
             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
                 <strong class="font-bold"><?= $validation->listErrors() ?></strong>
