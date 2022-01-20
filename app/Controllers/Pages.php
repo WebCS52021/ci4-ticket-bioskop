@@ -32,4 +32,12 @@ class Pages extends BaseController
 
         return view('pages/catalog', $data);
     }
+    public function order()
+    {
+        $data = [
+            'title'=> 'Halaman Pemesanan',
+        ];
+
+        return view('pages/order', $data);
+    }
 }

@@ -1,5 +1,5 @@
 <?= $this->extend('layout/template') ;?>
 
 <?= $this->section('content') ;?>
-<p>ini home</p>
+<a style="underline" href="/pages/order">ini home</a>
 <?= $this->endSection() ;?>
