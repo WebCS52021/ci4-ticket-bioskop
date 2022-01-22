@@ -18,6 +18,7 @@ class Movies extends Seeder
                 'movie_rating' => 4.5,
                 'movie_price' => "Rp. 35.000"
             ],
+            
             [
                 'movie_title' => 'Spiderman No Way Home',
                 'slug' => 'spiderman-nwh',

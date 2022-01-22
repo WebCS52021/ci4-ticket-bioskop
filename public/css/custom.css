@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 }
@@ -160,3 +161,57 @@ img {
 	background-color: #2196f3;
 	padding: 10px;
 }
+
+/*  */
+.h1recomend{
+
+	font-size: xx-large;
+	text-align: center;
+	}
+	
+	.sidebarjudulrecomended{
+	  font-size: x-large
+	}
+	
+	.red_recomend{
+	color: red;
+	}
+	
+	.white_recomend{
+	color: white;
+	}
+	.violet_recomend{
+	  color: rgb(109 40 217);
+	}
+	
+	.sidenav_recomend {
+	  width: 215px;
+	  position: fixed;
+	  z-index: 1;
+	  top: 130px;
+	  left: 0px;
+	  bottom: 25px;
+	  background: rgb(139 92 246 / var(--tw-bg-opacity));
+	  overflow-x: hidden;
+	  padding: 8px 0;
+	  overflow-y: auto;
+	}
+	
+	.sidenav_recomend a {
+	  padding: 6px 8px 6px 16px;
+	  text-decoration: none;
+	  font-size: 25px;
+	  color:rgb(139 92 246);
+	  display: block;
+	}
+	
+	.sidenav_recomend a:hover {
+	  color: #064579;
+	}
+	
+	.main_recomend {
+	  margin-left: 160px;
+	  font-size: 28px;
+	  padding: 0px 10px;
+	}
+	
