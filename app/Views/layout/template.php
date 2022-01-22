@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/custom.css">
 </head>
 
 <body>
@@ -18,11 +19,6 @@
 	<!-- CONTENT -->
 
 	<?= $this->renderSection('content'); ?>
-
-	<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
-
-	<?= $this->include('layout/footer') ;?>
-
 
 </body>
 

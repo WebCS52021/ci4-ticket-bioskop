@@ -8,8 +8,10 @@ class Pages extends BaseController
 {
     public function index()
     {
+        $movies = $this->movies_model->findAll();
         $data = [
             'title'=> 'Home',
+            'movies' => $movies
         ];
 
         return view('pages/home', $data);
@@ -26,8 +28,10 @@ class Pages extends BaseController
 
     public function catalog()
     {
+        $movies = $this->movies_model->findAll();
         $data = [
             'title'=> 'Catalog',
+            'movies' => $movies
         ];
 
         return view('pages/catalog', $data);

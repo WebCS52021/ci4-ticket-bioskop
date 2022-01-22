@@ -6,7 +6,7 @@
     <?php foreach ($movies as $movie) : ?>
         <div class="max-w-xs bg-white rounded-lg border border-gray-200 shadow-md m-10">
             <a href="#">
-                <img class="rounded-t-lg object-cover h-48 w-96" src="/images/<?= $movie['movie_thumbnail']; ?>">
+                <img class="rounded-t-lg object-cover object-top h-48 w-96" src="/images/<?= $movie['movie_thumbnail']; ?>">
             </a>
             <div class="p-5">
                 <a href="#">
@@ -27,5 +27,8 @@
         </div>
     <?php endforeach ?>
 </div>
+
+
+<?= $this->include('layout/footer') ;?>
 
 <?= $this->endSection(); ?>
