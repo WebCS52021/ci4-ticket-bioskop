@@ -35,9 +35,17 @@ class Pages extends BaseController
     public function order()
     {
         $data = [
-            'title'=> 'Halaman Pemesanan',
+            'title'=> 'movie_title',
         ];
 
         return view('pages/order', $data);
     }
+    public function pembayaran()
+    {
+        $data = [
+            'title'=> 'Pembayaran',
+        ];
+        return view('pages/order/pembayaran', $data);
+    }
+    
 }

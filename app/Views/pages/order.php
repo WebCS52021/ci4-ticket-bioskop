@@ -1,7 +1,7 @@
 <?= $this->extend('layout/template') ;?>
 
 <?= $this->section('content') ;?>
-    <div class="container mx-auto">
+    <div class="container">
         </br>
         <h2>Title</h2> <!-- Ini Isi ama alamat title dari database -->
         </br>
@@ -13,7 +13,7 @@
                 <div class= "box-content h-auto w-auto p-4 border-4 border-black">
                     <div style="font-size: 11px; text-align: left; padding-left: 10px; margin-bottom: 10px; border-all: solid black 1px">
                         <p>Seats: </p>
-                        <p>Ticket: </p>
+                        <p>Ticket Price: </p>
                         <p>Studio: </p>
                         <p>Date: </p>
                         <p>Total Payment:</p>
@@ -22,127 +22,153 @@
             </div>
         </div>
         </br>
-        <div class= "text-center">
-            <h2>Layar Bioskop</h2>
+        <ul class="showcase">
+            <li>
+                <div class="seat">A</div>
+                <small>Available</small>
+            </li>
+            <li>
+                <div class="seat selected">S</div>
+                <small>Selected</small>
+            </li>
+            <li>
+                <div class="seat booked">B</div>
+                <small>Booked</small>
+            </li>
+        </ul>
+        <br>
+            <h2 class="text-center">Layar Bioskop</h2>
             <br>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A1</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A2</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A3</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A4</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A5</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A6</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A7</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A8</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A9</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A10</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A11</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A12</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A13</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A14</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">A15</button>
+            <div class="row">
+            <div class="seat">A1</div>
+            <div class="seat">A2</div>
+            <div class="seat">A3</div>
+            <div class="seat">A4</div>
+            <div class="seat">A5</div>
+            <div class="seat">A6</div>
+            <div class="seat">A7</div>
+            <div class="seat">A8</div>
+            <div class="seat">A9</div>
+            <div class="seat">A10</div>
+            <div class="seat">A11</div>
+            <div class="seat">A12</div>
+            <div class="seat">A13</div>
+            <div class="seat">A14</div>
+            <div class="seat">A15</div>
+            </div>
+            <div class="row">
+            <div class="seat">B1</div>
+            <div class="seat">B2</div>
+            <div class="seat">B3</div>
+            <div class="seat">B4</div>
+            <div class="seat">B5</div>
+            <div class="seat">B6</div>
+            <div class="seat">B7</div>
+            <div class="seat">B8</div>
+            <div class="seat">B9</div>
+            <div class="seat">B10</div>
+            <div class="seat">B11</div>
+            <div class="seat">B12</div>
+            <div class="seat">B13</div>
+            <div class="seat">B14</div>
+            <div class="seat">B15</div>
+            </div>
+            <div class="row">
+            <div class="seat">C1</div>
+            <div class="seat">C2</div>
+            <div class="seat">C3</div>
+            <div class="seat">C4</div>
+            <div class="seat">C5</div>
+            <div class="seat">C6</div>
+            <div class="seat">C7</div>
+            <div class="seat">C8</div>
+            <div class="seat">C9</div>
+            <div class="seat">C10</div>
+            <div class="seat">C11</div>
+            <div class="seat">C12</div>
+            <div class="seat">C13</div>
+            <div class="seat">C14</div>
+            <div class="seat">C15</div>
+            </div>
+            <div class="row">
+            <div class="seat">D1</div>
+            <div class="seat">D2</div>
+            <div class="seat">D3</div>
+            <div class="seat">D4</div>
+            <div class="seat">D5</div>
+            <div class="seat">D6</div>
+            <div class="seat">D7</div>
+            <div class="seat">D8</div>
+            <div class="seat">D9</div>
+            <div class="seat">D10</div>
+            <div class="seat">D11</div>
+            <div class="seat">D12</div>
+            <div class="seat">D13</div>
+            <div class="seat">D14</div>
+            <div class="seat">D15</div>
+            </div>
+            <div class="row">
+            <div class="seat">E1</div>
+            <div class="seat">E2</div>
+            <div class="seat">E3</div>
+            <div class="seat">E4</div>
+            <div class="seat">E5</div>
+            <div class="seat">E6</div>
+            <div class="seat">E7</div>
+            <div class="seat">E8</div>
+            <div class="seat">E9</div>
+            <div class="seat">E10</div>
+            <div class="seat">E11</div>
+            <div class="seat">E12</div>
+            <div class="seat">E13</div>
+            <div class="seat">E14</div>
+            <div class="seat">E15</div>
+            </div>
+            <div class="row">
+            <div class="seat">F1</div>
+            <div class="seat">F2</div>
+            <div class="seat">F3</div>
+            <div class="seat">F4</div>
+            <div class="seat">F5</div>
+            <div class="seat">F6</div>
+            <div class="seat">F7</div>
+            <div class="seat">F8</div>
+            <div class="seat">F9</div>
+            <div class="seat">F10</div>
+            <div class="seat">F11</div>
+            <div class="seat">F12</div>
+            <div class="seat">F13</div>
+            <div class="seat">F14</div>
+            <div class="seat">F15</div>
+            </div>
+            <div class="row">
+            <div class="seat">G1</div>
+            <div class="seat">G2</div>
+            <div class="seat">G3</div>
+            <div class="seat">G4</div>
+            <div class="seat">G5</div>
+            <div class="seat">G6</div>
+            <div class="seat">G7</div>
+            <div class="seat">G8</div>
+            <div class="seat">G9</div>
+            <div class="seat">G10</div>
+            <div class="seat">G11</div>
+            <div class="seat">G12</div>
+            <div class="seat">G13</div>
+            <div class="seat">G14</div>
+            <div class="seat">G15</div>
+            </div>
             <br>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B1</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B2</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B3</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B4</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B5</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B6</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B7</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B8</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B9</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B10</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B11</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B12</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B13</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B14</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">B15</button>
+            <p class="text-center">
+                Anda sudah memilih <span id="count">0 kursi dengan total seharga Rp. <span
+                id="total"
+                >0</span>
+            </p>
             <br>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C1</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C2</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C3</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C4</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C5</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C6</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C7</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C8</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C9</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C10</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C11</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C12</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C13</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C14</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">C15</button>
-            <br>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D1</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D2</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D3</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D4</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D5</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D6</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D7</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D8</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D9</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D10</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D11</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D12</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D13</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D14</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">D15</button>
-            <br>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E1</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E2</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E3</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E4</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E5</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E6</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E7</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E8</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E9</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E10</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E11</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E12</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E13</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E14</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">E15</button>
-            <br>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F1</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F2</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F3</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F4</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F5</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F6</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F7</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F8</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F9</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F10</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F11</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F12</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F13</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F14</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">F15</button>
-            <br>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G1</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G2</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G3</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G4</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G5</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G6</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G7</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G8</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G9</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G10</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G11</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G12</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G13</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G14</button>
-            <button class="rounded-md" style="background-color: blueviolet; color:white">G15</button>
-            <br>
-            <br>
-            <button class=rounded-md style="background-color:blue; color:white">Pesan</button>
-        </div>
-        </br>
-
-        
+            <button href="/pages/order/pembayaran" class="rounded-md" style="background-color:blue; color:white" href="/pages/pembayaran">Pesan</button>
+        </br>        
         <br>
     </div>
+    <script src="/js/orderscript.js"></script>
+
 <?= $this->endSection() ;?>
