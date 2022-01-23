@@ -2,7 +2,6 @@
 
 
 <?= $this->section('content') ;?>
-<p><?php echo session()->get('user_name') ?></p>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
