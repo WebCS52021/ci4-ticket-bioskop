@@ -1,6 +1,17 @@
-<?= $this->extend('layout/template'); ?>
+<?= $this->extend('layout/template') ;?>
 
-<?= $this->section('content'); ?>
+<?= $this->section('content') ;?>
+<div id="to_top">
+<br>
+</div>
+<?php
+////////////////////////////////////////////////////RECOMEND CODE START///////////////////////////////////////  
+?>
+<div class="bg-violet-500" name="">
+    <p> </p>
+    <h1 class="h1recomend white_recomend"><b>RECOMENDED FOR YOU</b></h1>
+    <p> </p>
+</div>
 
 <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-auto">
     <?php foreach ($movies as $movie) : ?>
@@ -17,6 +28,9 @@
                 <p class="mb-3 font-normal text-gray-700 truncate">
                     <?= $movie['movie_desc']; ?>
                 </p>
+                <p class="mb-3 font-normal text-gray-700 truncate">
+                    <?= $movie['movie_rating']; ?> ⭐️
+                </p>
                 <a href="/pages/detail/<?=$movie['slug'];?>" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 ">
                     Read more
                     <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -29,6 +43,4 @@
 </div>
 
 
-<?= $this->include('layout/footer') ;?>
-
-<?= $this->endSection(); ?>
+<?= $this->endSection();?>

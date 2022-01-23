@@ -51,5 +51,6 @@ class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
         // global variable
         $this->movies_model = new Movies();
+        
     }
 }
