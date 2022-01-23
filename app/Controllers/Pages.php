@@ -58,7 +58,7 @@ class Pages extends BaseController
             'movies' => $this->movies_model->getmovies($slug)
         ];
 
-        return view('pages/recomend', $data);
+        return view('pages/detail', $data);
       
        
     }
