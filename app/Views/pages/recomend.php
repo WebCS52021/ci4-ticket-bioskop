@@ -19,36 +19,12 @@
 ////////////////////////////////////////////////////RECOMEND CODE END///////////////////////////////////////  
 ?>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+<p><?php echo session()->get('user_name') ?></p>
+
+
+
 
    
 <?php
