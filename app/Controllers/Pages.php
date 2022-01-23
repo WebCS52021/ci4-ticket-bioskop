@@ -44,7 +44,7 @@ class Pages extends BaseController
         $movies = $this->movies_model->findAll();
         $data = [
             'title'=> 'Recomend',
-            'movies' => $movies
+            'movies' => $this->movies_model->getmovies()
         ];
 
         return view('pages/recomend', $data);
@@ -58,7 +58,7 @@ class Pages extends BaseController
             'movies' => $this->movies_model->getmovies($slug)
         ];
 
-        return view('pages/detail', $data);
+        return view('pages/recomend', $data);
       
        
     }
