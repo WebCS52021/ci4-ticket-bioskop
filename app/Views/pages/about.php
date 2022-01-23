@@ -2,4 +2,5 @@
 
 <?= $this->section('content') ;?>
 <p>ini about</p>
+
 <?= $this->endSection() ;?>

@@ -15,4 +15,7 @@ class Movies extends BaseController
         ];
         return view('movies/index', $data);
     }
+
+  
 }
+

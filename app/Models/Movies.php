@@ -13,4 +13,12 @@ class Movies extends Model
     // Dates
     protected $useTimestamps = true;
 
+    public function getmovies($slug = false){
+        
+        if ($slug == false){
+            return $this->findAll();
+
+        }
+        return $this->where(['slug' => $slug])->first();
+    }
 }
