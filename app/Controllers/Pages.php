@@ -41,7 +41,7 @@ class Pages extends BaseController
     }
     public function recomend()
     {
-        $movies = $this->movies_model->findAll();
+        $movies = $this->movies_model->orderBy('movie_rating', 'DESC');
         $data = [
             'title'=> 'Recomend',
             'movies' => $this->movies_model->getmovies()
