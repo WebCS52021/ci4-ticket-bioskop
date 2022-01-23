@@ -165,7 +165,9 @@
                 >0</span>
             </p>
             <br>
-            <button href="/pages/order/pembayaran" class="rounded-md" style="background-color:blue; color:white" href="/pages/pembayaran">Pesan</button>
+            <div class="text-center">
+                <button href="/pages/order/pembayaran" class="rounded-md" style="background-color:blue; color:white" href="/pages/pembayaran">Pesan</button>
+            </div>
         </br>        
         <br>
     </div>
