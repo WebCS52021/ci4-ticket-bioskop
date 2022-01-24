@@ -39,6 +39,25 @@ class Pages extends BaseController
 
         return view('pages/catalog', $data);
     }
+
+    public function order($slug)
+    {
+        $data = [
+            'title'=> 'Order',
+            'movies' => $this->movies_model->getmovies($slug)
+        ];
+
+        return view('pages/order', $data);
+    }
+
+    public function pembayaran()
+    {
+        $data = [
+            'title'=> 'Pembayaran',
+        ];
+        return view('pages/order/pembayaran', $data);
+    }
+    
     public function recomend()
     {
         $movies = $this->movies_model->orderBy('movie_rating', 'DESC');
@@ -59,7 +78,5 @@ class Pages extends BaseController
         ];
 
         return view('pages/detail', $data);
-      
-       
     }
 }
