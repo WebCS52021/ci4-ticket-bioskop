@@ -34,7 +34,7 @@
     <p><b>Price :</b> <?= $movies['movie_price']; ?></p>
   </div>
   <div>
-    <a class="button" style="vertical-align:middle"><span>PESAN</span></a>
+    <a href="/pages/order/<?=$movies['slug'];?>" class="button" style="vertical-align:middle"><span>PESAN</span></a>
   </div>
 </div>
 

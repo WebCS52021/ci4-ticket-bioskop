@@ -40,15 +40,16 @@ class Pages extends BaseController
         return view('pages/catalog', $data);
     }
 
-    public function order()
+    public function order($slug)
     {
         $data = [
-            'title'=> 'movie_title',
+            'title'=> 'Order',
+            'movies' => $this->movies_model->getmovies($slug)
         ];
 
         return view('pages/order', $data);
     }
-    
+
     public function pembayaran()
     {
         $data = [
@@ -77,7 +78,5 @@ class Pages extends BaseController
         ];
 
         return view('pages/detail', $data);
-      
-       
     }
 }
