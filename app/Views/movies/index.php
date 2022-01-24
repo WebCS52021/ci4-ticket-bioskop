@@ -1,19 +1,7 @@
 <?= $this->extend('layout/template'); ?>
 
+<?= $this->section('content'); ?>
 
-<?= $this->section('content') ;?>
-
-<!-- Slideshow container -->
-<div class="slideshow-container">
-    <!-- Full-width images with number and caption text -->
-    <?php foreach ($movies as $movie) : ?>
-        <div class="mySlides fade">
-            <img class="object-fit h-96 w-full" src="/images/<?= $movie['movie_thumbnail']; ?>">
-        </div>
-    <?php endforeach ?>
-</div>
-
-<div class="text-2xl font-bold mx-auto pt-10 flex items-center justify-center">All Movie 🎞 Now Playing</div>
 <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-auto">
     <?php foreach ($movies as $movie) : ?>
         <div class="max-w-xs bg-white rounded-lg border border-gray-200 shadow-md m-10">
@@ -40,27 +28,7 @@
     <?php endforeach ?>
 </div>
 
-<!-- data movie -->
-
-
-<script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change image every 2 seconds
-    }
-</script>
 
 <?= $this->include('layout/footer') ;?>
+
 <?= $this->endSection(); ?>
