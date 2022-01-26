@@ -15,9 +15,6 @@
 
 <body>
 
-	<!-- HEADER: MENU + HEROE SECTION -->
-	<?= $this->include('layout/navbar') ;?>
-	
 	<!-- CONTENT -->
 
 	<?= $this->renderSection('content'); ?>
