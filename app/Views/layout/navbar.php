@@ -1,7 +1,7 @@
 <header>
     <nav class="bg-violet-500 text-white print:hidden">
         <ul class="flex justify-between items-center px-5 py-2">
-            <li class="flex-row items-center">
+            <li class="items-center">
                 <p class="inline-block text-xl">🍿 </p>
                 <p class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-red-200 to-yellow-300 text-xl font-bold" href="#">iTicket</p>
             </li>
