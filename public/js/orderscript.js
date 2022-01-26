@@ -29,16 +29,16 @@ function updateTextArea() {
      var allSeatsVals = [];
   
      //Storing in Array
-     allNameVals.push($("#Username").val());
-     allNumberVals.push($("#Numseats").val());
-     $('#seatsBlock :checked').each(function() {
-       allSeatsVals.push($(this).val());
-     });
+    //  allNameVals.push($("#name").val());
+    //  allNumberVals.push($("#Numseats").val());
+    //  $('#seatsBlock :checked').each(function() {
+    //    allSeatsVals.push($(this).val());
+    //  });
     
-     //Displaying 
-     $('#nameDisplay').val(allNameVals);
-     $('#NumberDisplay').val(allNumberVals);
-     $('#seatsDisplay').val(allSeatsVals);
+    //  //Displaying 
+    //  $('#nameDisplay').val(allNameVals);
+    //  $('#NumberDisplay').val(allNumberVals);
+    //  $('#seatsDisplay').val(allSeatsVals);
     }
   else
     {
