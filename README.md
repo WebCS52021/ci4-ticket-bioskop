@@ -37,21 +37,13 @@ npm i
 composer install
 ```
 
-1. liat hasilnya
-
-```jsx
-php spark serve
-```
-
-## Database Modelling
-
-1. pindah ke branch setup-model
-
-```jsx
-git checkout feat/setup-model
-```
-
-1. buat database di lokal
+1. build file tailwindcss
+    
+    ```jsx
+    npm run makecss
+    ```
+    
+2. buat database di lokal(jika belum buat sebelumnya)/ buat diphpmyadmin (bebas)
     1. masuk ke database
     
     ```jsx
@@ -61,7 +53,7 @@ git checkout feat/setup-model
     b. buat database baru
     
     ```jsx
-    create database coba_ci4;
+    create database ticket_bioskop;
     ```
     
     c. cek apakah databasenya udah ada
@@ -70,16 +62,26 @@ git checkout feat/setup-model
     show databases;
     ```
     
-2. Migrate database
+3. cek .env file dan ubah variable berikut sesuai no.7
+
+```jsx
+database.default.hostname = localhost
+database.default.database = ticket_bioskop (sesuai nama database kalian)
+database.default.username = root (username database)
+database.default.password = passwordmysql (isi password ysql/kosongin jika tidak ada)
+database.default.DBDriver = MySQLi
+```
+
+1. Migrate database untuk membuat kerangka/table dimysql
 
 ```jsx
 php spark migrate
 ```
 
-1. isi database
+1. isi database dengan data dummy dari seed( keperluan testing)
 
 ```jsx
-php spark db:seed
+php spark db:seed Movies
 ```
 
 1. liat hasilnya
