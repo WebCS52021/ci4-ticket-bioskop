@@ -608,6 +608,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: auto;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
