@@ -6,45 +6,44 @@
 git clone https://github.com/WebCS52021/ci4-ticket-bioskop.git
 ```
 
-1. masuk ke directory
+2. masuk ke directory
 
 ```jsx
 cd ci4-ticket-bioskop
 ```
 
-1. buka vscode di direktori
+3. buka vscode di direktori
 
 ```jsx
 code .
 ```
-
-1. masuk ke brach terupdate(dev)
+4. masuk ke brach terupdate(dev)
 
 ```jsx
 git checkout dev
 ```
 
-1. install package node(tailwindcss)
+5. install package node(tailwindcss)
 
 ```jsx
 npm i
 ```
 
-1. pastikan punya composer dan php >7.4
-2. install package php(ci4)
+6. pastikan punya composer dan php >7.4
+7. install package php(ci4)
 
 ```jsx
 composer install
 ```
 
-1. build file tailwindcss
+8. build file tailwindcss
     
     ```jsx
     npm run makecss
     ```
     
-2. buat database di lokal(jika belum buat sebelumnya)/ buat diphpmyadmin (bebas)
-    1. masuk ke database
+9. buat database di lokal(jika belum buat sebelumnya)/ buat diphpmyadmin (bebas)
+    a. masuk ke database
     
     ```jsx
     mysql -u root -p
@@ -62,7 +61,7 @@ composer install
     show databases;
     ```
     
-3. cek .env file dan ubah variable berikut sesuai no.7
+10. cek .env file dan ubah variable berikut sesuai no.9
 
 ```jsx
 database.default.hostname = localhost
@@ -72,19 +71,19 @@ database.default.password = passwordmysql (isi password ysql/kosongin jika tidak
 database.default.DBDriver = MySQLi
 ```
 
-1. Migrate database untuk membuat kerangka/table dimysql
+11. Migrate database untuk membuat kerangka/table dimysql
 
 ```jsx
 php spark migrate
 ```
 
-1. isi database dengan data dummy dari seed( keperluan testing)
+12. isi database dengan data dummy dari seed( keperluan testing)
 
 ```jsx
 php spark db:seed Movies
 ```
 
-1. liat hasilnya
+13. liat hasilnya
 
 ```jsx
 php spark serve
