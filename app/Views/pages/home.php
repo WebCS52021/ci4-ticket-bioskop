@@ -2,6 +2,8 @@
 
 
 <?= $this->section('content') ;?>
+<!-- Navbar -->
+<?= $this->include('layout/navbar') ;?>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">

@@ -79,4 +79,13 @@ class Pages extends BaseController
 
         return view('pages/detail', $data);
     }
+    public function invoices($slug)
+    {
+        $data = [
+            'title'=> 'Invoices',
+            'movies' => $this->movies_model->getmovies($slug)
+        ];
+
+        return view('pages/invoices', $data);
+    }
 }

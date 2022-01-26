@@ -1,6 +1,8 @@
 <?= $this->extend('layout/template') ;?>
 
 <?= $this->section('content') ;?>
+<!-- Navbar -->
+<?= $this->include('layout/navbar') ;?>
 <div id="to_top">
 <br>
 </div>
