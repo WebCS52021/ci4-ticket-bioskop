@@ -1,5 +1,5 @@
 <header>
-    <nav class="bg-violet-500 text-white">
+    <nav class="bg-violet-500 text-white print:hidden">
         <ul class="flex justify-between items-center px-5 py-2">
             <li class="items-center">
                 <p class="inline-block text-xl">🍿 </p>
